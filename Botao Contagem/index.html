@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Botão Contagem</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    </head>
+    <body>
+        <div class="container">
+            <div class="next" onclick="nextNum()"></div>
+            <div class="prev" onclick="nextPrev()"></div>
+            <div id="box"></div>
+        </div>
+    </body>
+    <script type="text/javascript">
+        var numbers = document.getElementById('box');
+        for(i=0;i<100;i++)
+        {
+            var span = document.createElement('span');
+            span.textContent = i;
+            numbers.appendChild(span);
+        }
+
+        var num = numbers.getElementsByTagName('span');
+        var index = 0;
+
+        function nextNum()
+        {
+            num[index].style.display = 'none';
+            index = (index + 1)% num.length;
+            num[index].style.display = 'initial';
+        }
+
+        function nextPrev()
+        {
+            num[index].style.display = 'none';
+            index = (index - 1 + num.length)% num.length;
+            num[index].style.display = 'initial';
+        }
+    </script>
+</html>
