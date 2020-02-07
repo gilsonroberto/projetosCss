@@ -27,7 +27,7 @@ section:before
     left: 0;
     width: 100%;
     height: 100%;
-    background: #ff2562;
+    background: darkred /*#ff2562*/;
     clip-path: polygon(54% 0, 100% 0, 100% 100%, 84% 100%);
     animation: fade-in 0.5s ease-in forwards;
     animation-delay: 1.5s;
@@ -47,7 +47,7 @@ section .content
 section .content h2
 {
     color: #fff;
-    font-size: 3em;
+    font-size: 1.8em;
     font-weight: 800;
 }
 
@@ -63,7 +63,7 @@ section .content a
     display: inline-block;
     padding: 15px 30px;
     margin-top: 20px;
-    background: #ff2562;
+    background: darkred /*#ff2562*/;
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
@@ -72,18 +72,28 @@ section .content a
     letter-spacing: 2px;
 }
 
-section .imgBx
+section .imgBx 
 {
     position: relative;
     padding-right: 100px;
 }
 
-section .imgBx img
+section .imgBx img 
 {
     max-width: 500px;
     animation: fade-in 0.5s ease-in forwards;
     animation-delay: 2s;
     opacity: 0;
+}
+
+section .imgBx h2 
+{
+    text-align: center;
+    animation: fade-in 0.5s ease-in forwards;
+    animation-delay: 2s;
+    opacity: 0;
+    color: #fff;
+    font-size: 1.2em;
 }
 
 .sci
@@ -146,7 +156,7 @@ section .imgBx img
 .nav li a.active,
 .nav li a:hover
 {
-    color: #ff2562;
+    color: darkred /*#ff2562*/ /*#ff2562*/;
 }
 
 @keyframes fade-in
