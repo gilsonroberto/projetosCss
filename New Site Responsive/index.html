@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset='utf-8'>
         <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-        <title>Kenshin Osasco</title>
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+        <title>Judô Kenshin</title>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
@@ -12,24 +14,39 @@
         <section>
             <div class="content">
                 <div>
-                    <h2>ASSOCIAÇÃO DE JUDÔ KENSHIN</h2><br>
+                    <h2>ASSOCIAÇÃO DE JUDÔ <span style="color: darkred;">KENSHIN</span></h2><br>
                     <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                         O significado de Shinsei Kaihatsu é “Fazer exteriorizar a natureza divina de cada um”.
+                        A missão da Associação de Judô Kenshin é, através das técnicas de Judô, buscar a harmonia dos movimentos, o equilíbrio do espírito e o controle emocional, superando as reações instintivas de revolta e agressão. Reconhecer no próximo um ser igual, respeitar e o ajudar a ele e a si mesmo a encontrar o caminho da verdade.
+                        O Significado de Kenshin é “Busca do caminho da verdade”.
+                        A prática do Judô Kenshin, tem o intuito de formar homens de caráter elevado, moralmente equilibrados e solidariamente envolvidos.
                     </p>
                     <a href="#">Learn More</a>
                 </div>
             </div>
-            <div class="imgBx">
-                <img src="bg.png">
-                <h2>Nippon Den Kodokan Judô Shinsei Kaihatatsu</h2><br>
-                <h2>Desde 1957</h2>
+            <div class="imgBx"><!--
+                <a href="http://www.fpj.com.br/" target="_blank">
+                    <img style="float: right;" src="fpj.png" class="link2" alt="">
+                </a>
+                <a href="http://www.cbj.com.br/" target="_blank">
+                    <img style="float: left;" src="cbj.png" class="link" alt="">
+                </a>-->
+                <img src="bg.png"><!--
+                <h2>Nippon Den Kodokan Judô <br>Shinsei Kaihatatsu</h2><br>
+                <h2>Desde 1957</h2>-->
             </div>
-            <ul class="nav"> 
-                <li><a href="#">Home</a></li>
-                <li><a href="#" class="active">About</a></li>
-                <li><a href="#">Performance</a></li>
-                <li><a href="#">Team</a></li>
-                <li><a href="#">Ranking</a></li>
+            <ul class="nav" id="nav"> 
+                <li><a href="#">SUKEJI SHIBAYAMA</a></li>
+                <li><a href="#" class="active">Sobre</a></li>
+                <li><a href="#">Valores</a></li>
+                <li><a href="#">Integrantes</a></li>
+                <li><a href="#">Horários</a></li>
+            </ul><br><br>
+            <ul class="nav2" id="nav2">
+                <li><a href="#">Acervo</a></li>
+                <li><a href="#">História</a></li>
+                <li><a href="#">Apostila</a></li>
+                <li><a href="#">Blog</a></li>
             </ul>
             <ul class="sci"> 
                 <li><a href="#">Facebook</a></li>
@@ -37,5 +54,27 @@
                 <li><a href="#">Instagram</a></li>
             </ul>
         </section>
+        <span class="menuicon" id="toogle" onclick="menuToggle();"></span>
+        <br>
+        <br>
+        <script type="text/javascript">
+
+          
+            function menuToggle()
+            {
+                var nav = document.getElementById("nav");
+                nav.classList.toggle("active")
+
+                var toggle = document.getElementById("toggle");
+                toggle.classList.toggle("active");
+
+                var nav2 = document.getElementById("nav2");
+                nav2.classList.toggle("active")
+
+                var toggle2 = document.getElementById("toggle");
+                toggle2.classList.toggle("active");
+            }
+ 
+        </script>
     </body>
 </html>
